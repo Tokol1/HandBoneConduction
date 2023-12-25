@@ -1,0 +1,104 @@
+/*--最新--*/
+.v33_38 {
+    width: 463px;
+    height: 96px;
+    background: rgba(192,230,251,0.5);
+    opacity: 1;
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    overflow: hidden;
+  }
+
+
+.v33_39 {
+    width: 300px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 40px;
+    left: 110px;
+    opacity: 1;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 40px;
+    text-align: center;
+  }
+
+body {
+    background: rgba(238,255,249,1);
+    font-size: 14px;
+  }
+
+  .v49_31 {
+    width: 720px;
+    height: 300px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: relative;
+    top: 175px;
+    left: 340px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    overflow: hidden;
+  }
+
+  label[for="theme"]{
+    width: 400px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 220px;
+    left: 327px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 48px;
+    opacity: 1;
+    text-align: center;
+    z-index: 100;
+  }
+
+
+.theme {
+    width: 455px;
+    height: 150px;
+    background: rgba(255,238,179,1);
+    position: absolute;
+    top: 328px;
+    left: 606px;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+    font-size: 82px;
+}
+
+#theme{
+    margin-right: 300px;
+    font-size: 30px;
+    position: relative; /* 追加 */
+    top: 20px; /* この値を調整してラベルを下に移動させてください */
+}
+
+.a {
+  width: 381px;
+  height: 135px;
+  color: rgba(0,0,0,1);
+  background: rgba(198,178,255,1);
+  position: absolute;
+  top: 505px;
+  left: 1000px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 48px;
+  opacity: 1;
+  text-align: center;
+  z-index: 100;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>伝言ゲーム</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/real.css">
+</head>
+<body class="back">
+    <div class="title_part1" >
+        <h1>伝言ゲーム</h1>
+    </div>
+    <!-- ゲーム結果を表示する -->
+    <div class="wrap pattern-1" id="makeImg">
+        <h1>ゲーム結果</h1>
+    </div>
+    <!-- ゲームの内容を表示する -->
+    <div class="game-content">
+        <div class="cont">
+            {% for turn in game %}
+                <!-- 偶数のターンのみ表示する -->
+                {% if loop.index0 % 2 == 0 %}
+                    <!-- ターンの内容を表示する -->
+                    <div class="balloon_r">
+                        <div class="faceicon">
+                            <img src="../static/pictures/image{{ loop.index0 }}.jpeg" alt="" >
+                        </div>
+                        {% if loop.index0 == 0 %}
+                            <div class="says"><p>お題は {{ turn['content'] }}</p></div>
+                        {% endif %}
+                        {% if loop.index0 != 0 %}
+                            <div class="says"><p>{{ turn['content'] }}</p></div>
+                        {% endif %}
+                    </div>
+                {% endif %}
+                {% if loop.index0 % 2 == 1 %}
+                    <!-- 画像を表示する -->
+                    <div class="balloon_l">
+                        <div class="faceicon">
+                            <img src="../static/pictures/image{{ loop.index0 }}.jpeg" alt="" >
+                        </div>
+                        <div class="says">
+                            <img src="static/pictures/Add_{{ loop.index0 - 1 }}.jpg" alt="Add image">
+                        </div>
+                    </div>
+                    <div class="balloon_l">
+                        <div class="image">
+                            <img src="../static/pictures/gry.jpeg" alt="" >
+                        </div>
+                        <div class="says">
+                            <img src="static/pictures/real1_{{ loop.index0 - 1 }}.jpg" alt="Add image">
+                        </div>
+                    </div>
+                    <div class="balloon_l">
+                        <div class="image">
+                            <img src="../static/pictures/gry.jpeg" alt="" >
+                        </div>
+                        <div class="says">
+                            <img src="static/pictures/real2_{{ loop.index0 - 1 }}.jpg" alt="Add image">
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="right-top-square"></div>
+
+    <form method="POST" action="/404">
+        <button type="submit" class="title_part3"><h2>やめる</h2></button>
+    </form>
+
+    <form method="POST" action="/404">
+        <button type="submit" class="title_part4"><h2>もう一度</h2></button>
+    </form>
+     
+
+</body>
+</html>

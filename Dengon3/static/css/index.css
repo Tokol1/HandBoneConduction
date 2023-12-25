@@ -1,0 +1,127 @@
+/*--最新--*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(238,255,249,1);
+  font-size: 14px;
+}
+
+.v33_38 {
+  width: 850px;
+  height: 180px;
+  background: rgba(79,171,238,0.5);
+  opacity: 1;
+  position: relative;
+  top: 80px;
+  left: 300px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  overflow: hidden;
+}
+
+.v33_39 {
+  width: 705px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 135px;
+  left: 400px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 64px;
+  opacity: 1;
+  text-align: left;
+}
+
+.v49_26 {
+  width: 381px;
+  height: 135px;
+  background: rgba(198,178,255,1);
+  opacity: 1;
+  position: relative;
+  top: 300px;
+  left: 970px;
+
+  overflow: hidden;
+}
+
+.a {
+    width: 381px;
+    height: 135px;
+    color: rgba(0,0,0,1);
+    background: rgba(198,178,255,1);
+    position: absolute;
+    top: 505px;
+    left: 1000px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 48px;
+    opacity: 1;
+    text-align: center;
+    z-index: 100;
+}
+
+.v49_31 {
+  width: 629px;
+  height: 217px;
+  background: rgba(217,217,217,1);
+  opacity: 1;
+  position: relative;
+  top: 233px;
+  left: 55px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  overflow: hidden;
+}
+
+label[for="num_players"]{
+  width: 400px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 435px;
+  left: 85px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 48px;
+  opacity: 1;
+  text-align: center;
+  z-index: 100;
+}
+.players{
+  width: 446px;
+  height: 123px;
+  background: rgba(255,238,179,1);
+  opacity: 1;
+  position: absolute;
+  top: 515px;
+  left: 246px;
+  font-size: 82px;
+  text-align: center;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  overflow: hidden;
+}
+
+.v54_40 {
+  width: 64px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 556px;
+  left: 585px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 64px;
+  opacity: 1;
+  text-align: left;
+}

@@ -1,0 +1,77 @@
+<!--最新-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="../static/css/play.css" rel="stylesheet" />
+        <title>伝言ゲーム</title>
+    </head>
+    
+    <body>
+        <div class="v59_133">
+        </div>
+        <span class="v59_134">伝言ゲーム</span>
+
+        <div class="v59_136">
+
+            <form method="POST" action="/start_hands_py">
+                <input type="submit" value="1枚目撮影" class="v59_137">
+            </form>
+
+        </div>
+
+        <div class="v59_139">
+
+            <form method="POST" action="/start_hands2_py">
+                <input type="submit" value="2枚目撮影" class="v59_140">
+            </form>
+
+        </div>
+
+        <div class="v59_143">
+
+            <form method="POST" action="/start_Add2_py">
+                <input type="submit" value="合成" class="v59_144">
+            </form>
+
+        </div>
+
+        <div class="v59_146">
+
+            <!-- プレイヤーの回答を入力するフォーム -->
+            <form method="POST" action="play">
+            <!-- 次へボタン -->
+                <button type="submit" class="a">次へ</button>
+            </form>            
+
+        </div>
+
+
+
+        <div class="v59_150">
+        </div>
+
+        <form method="POST" action="/shutdown">
+            <button type="submit" class="v59_153">やめる</button>
+        </form>    
+
+
+        <form method="POST" action="/reset">
+            <button type="submit" class="v59_156">最初から</button>
+        </form>
+
+
+
+
+        <span class="v59_158">プレイヤー {{ session['current_player'] }} </span>
+        
+
+        <div class="v59_160">
+        </div>
+        <span class="v59_159">お題</span>
+        <span class="v59_161"> {{ last_turn['content']}} </span>
+
+
+
+    </div>
+    </body>
+</html>

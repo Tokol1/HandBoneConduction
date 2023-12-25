@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../static/css/change.css">
+    <title>伝言ゲーム</title>
+</head>
+<body>
+    <div class="v59_133">
+    </div>
+    <div class="circle">伝言ゲーム</div>
+    
+    <span class="v59_158">プレイヤー {{ session['current_player'] }} </span>
+
+    <!-- 画像を表示 -->
+    <img id ="image" src="static/pictures/Add_{{ session['current_player'] - 2}}.jpg" alt="image"> 
+    
+    <div class="gray-box">
+    <!-- プレイヤーの回答を入力するフォーム -->
+        <form method="POST">
+            <!-- プレイヤーの回答を入力するフォーム -->
+            <label for="content" id="theme">左の画像はなんだろな</label>
+            <!-- プレイヤーの回答は必須 -->
+            <input type="text" class = "theme" id="content" name="content" required>
+            <!-- 次へボタン -->
+            <button id="button" type="submit">次へ</button>
+        </form>
+    </div>
+    
+
+    <div class="v59_150">
+    </div>
+
+    <form method="POST" action="/shutdown">
+        <button type="submit" class="v59_153">やめる</button>
+    </form>    
+
+
+    <form method="POST" action="/reset">
+        <button type="submit" class="v59_156">最初から</button>
+    </form>
+
+</body>
+</html>
